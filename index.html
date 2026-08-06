@@ -668,6 +668,47 @@
             font-size: 0.8rem;
         }
 
+        /* ===== WORKPLACE GALLERY ===== */
+        .workplace-gallery {
+            background: var(--white);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            .gallery-item img {
+                height: 280px;
+            }
+        }
+
         /* ===== CERTIFICATIONS ===== */
         .certifications {
             background: var(--bg);
@@ -992,7 +1033,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&h=600&fit=crop&crop=face" alt="Jinnat Parvin">
+                <img src="pic/pic1.jpeg" alt="Jinnat Parvin">
             </div>
         </div>
         <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
@@ -1027,7 +1068,7 @@
                 </div>
             </div>
             <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?w=600&h=700&fit=crop" alt="Laboratory Work">
+                <img src="pic/pic2.jpeg" alt="Laboratory Work">
             </div>
         </div>
     </section>
@@ -1057,6 +1098,23 @@
                     <p class="timeline-company">Sheikh Russel National Gastroliver Institute & Hospital, Mohakhali, Dhaka</p>
                     <p class="timeline-desc">Executed complex clinical laboratory procedures and specimen analyses in a fast-paced, high-volume hospital environment. Ensured strict adherence to biosafety guidelines and delivered highly accurate diagnostic reports to support critical patient care.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workplace Gallery -->
+    <section class="workplace-gallery" id="workplace">
+        <div class="section-header">
+            <span class="section-label">Gallery</span>
+            <h2 class="section-title">Current Workplace</h2>
+            <p class="section-subtitle">Snapshots from my professional environment</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="pic/pic3.jpeg" alt="Workplace Photo 1">
+            </div>
+            <div class="gallery-item">
+                <img src="pic/pic4.jpeg" alt="Workplace Photo 2">
             </div>
         </div>
     </section>
