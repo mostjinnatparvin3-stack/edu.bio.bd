@@ -50,13 +50,14 @@
             align-items: center;
             z-index: 1000;
             transition: all 0.4s ease;
-            background: transparent;
+            background: rgba(26, 58, 47, 0.85);
+            backdrop-filter: blur(10px);
         }
 
         nav.scrolled {
-            background: rgba(255,255,255,0.95);
+            background: rgba(255,255,255,0.98);
             backdrop-filter: blur(20px);
-            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
             padding: 15px 50px;
         }
 
@@ -67,10 +68,12 @@
             color: var(--white);
             text-decoration: none;
             transition: color 0.3s;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
         }
 
         nav.scrolled .nav-logo {
             color: var(--primary);
+            text-shadow: none;
         }
 
         .nav-links {
@@ -87,10 +90,12 @@
             letter-spacing: 0.5px;
             transition: color 0.3s;
             position: relative;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
         }
 
         nav.scrolled .nav-links a {
             color: var(--text);
+            text-shadow: none;
         }
 
         .nav-links a::after {
@@ -115,6 +120,7 @@
             font-size: 1.5rem;
             cursor: pointer;
             color: var(--white);
+            transition: color 0.3s;
         }
 
         nav.scrolled .mobile-menu-btn {
@@ -947,6 +953,7 @@
             }
         }
     </style>
+
 <base target="_blank">
 </head>
 <body>
