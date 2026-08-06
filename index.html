@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Most. Jinnat Parvin - Biochemistry & Molecular Biology Professional">
     <title>Most. Jinnat Parvin | Biochemistry & Molecular Biology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <base target="_blank">
     <style>
         :root {
             --primary: #1a3a2f;
@@ -266,6 +270,7 @@
             border-radius: 20px;
             box-shadow: 0 30px 60px rgba(0,0,0,0.3);
             animation: fadeInUp 1s ease 0.3s both;
+            background: linear-gradient(135deg, #2d5a4a, #1a3a2f);
         }
 
         .hero-image::before {
@@ -389,6 +394,7 @@
             width: 100%;
             border-radius: 20px;
             box-shadow: var(--shadow);
+            background: linear-gradient(135deg, #e8e4df, #f8f6f3);
         }
 
         /* ===== EXPERIENCE SECTION ===== */
@@ -698,15 +704,7 @@
             height: 350px;
             object-fit: cover;
             display: block;
-        }
-
-        @media (max-width: 768px) {
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-            .gallery-item img {
-                height: 280px;
-            }
+            background: linear-gradient(135deg, #e8e4df, #f8f6f3);
         }
 
         /* ===== CERTIFICATIONS ===== */
@@ -977,7 +975,8 @@
             }
 
             .edu-grid,
-            .cert-grid {
+            .cert-grid,
+            .gallery-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -992,10 +991,17 @@
             .about-stats {
                 grid-template-columns: 1fr;
             }
+
+            .gallery-item img {
+                height: 280px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
-
-<base target="_blank">
 </head>
 <body>
 
@@ -1010,7 +1016,7 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
             <i class="fas fa-bars"></i>
         </button>
     </nav>
@@ -1019,9 +1025,9 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-text">
-                <div class="hero-badge">Biochemistry & Molecular Biology</div>
+                <div class="hero-badge">Biochemistry &amp; Molecular Biology</div>
                 <h1>Most. <span>Jinnat Parvin</span></h1>
-                <p class="hero-subtitle">Laboratory Technologist & Researcher</p>
+                <p class="hero-subtitle">Laboratory Technologist &amp; Researcher</p>
                 <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Dinajpur, Bangladesh</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">
@@ -1033,7 +1039,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="pic/pic1.jpeg" alt="Jinnat Parvin">
+                <img src="pic/pic1.jpeg" alt="Jinnat Parvin" onerror="this.style.display='none'">
             </div>
         </div>
         <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
@@ -1068,7 +1074,7 @@
                 </div>
             </div>
             <div class="about-image">
-                <img src="pic/pic2.jpeg" alt="Laboratory Work">
+                <img src="pic/pic2.jpeg" alt="Laboratory Work" onerror="this.style.display='none'">
             </div>
         </div>
     </section>
@@ -1095,7 +1101,7 @@
                 <div class="timeline-content">
                     <span class="timeline-date">Sep 2020 – Dec 2024</span>
                     <h3 class="timeline-title">Laboratory Technologist</h3>
-                    <p class="timeline-company">Sheikh Russel National Gastroliver Institute & Hospital, Mohakhali, Dhaka</p>
+                    <p class="timeline-company">Sheikh Russel National Gastroliver Institute &amp; Hospital, Mohakhali, Dhaka</p>
                     <p class="timeline-desc">Executed complex clinical laboratory procedures and specimen analyses in a fast-paced, high-volume hospital environment. Ensured strict adherence to biosafety guidelines and delivered highly accurate diagnostic reports to support critical patient care.</p>
                 </div>
             </div>
@@ -1111,10 +1117,10 @@
         </div>
         <div class="gallery-grid">
             <div class="gallery-item">
-                <img src="pic/pic3.jpeg" alt="Workplace Photo 1">
+                <img src="pic/pic3.jpeg" alt="Workplace Photo 1" onerror="this.parentElement.style.display='none'">
             </div>
             <div class="gallery-item">
-                <img src="pic/pic4.jpeg" alt="Workplace Photo 2">
+                <img src="pic/pic4.jpeg" alt="Workplace Photo 2" onerror="this.parentElement.style.display='none'">
             </div>
         </div>
     </section>
@@ -1144,7 +1150,7 @@
     <section class="research" id="research">
         <div class="section-header">
             <span class="section-label">Publications</span>
-            <h2 class="section-title">Research & Projects</h2>
+            <h2 class="section-title">Research &amp; Projects</h2>
             <p class="section-subtitle">Contributing to scientific knowledge through innovative research</p>
         </div>
         <div class="research-card">
@@ -1158,7 +1164,7 @@
             <p class="research-desc">Investigated precise genome editing techniques utilizing the Cas9/CRISPR system to successfully modify targeted genetic sequences in bacterial models, contributing to advancements in genetic engineering and molecular biology research.</p>
         </div>
         <div style="max-width: 900px; margin: 30px auto 0;">
-            <div class="research-card" style="margin-top: 30px;">
+            <div class="research-card">
                 <span class="research-badge" style="background: rgba(26,58,47,0.1); color: var(--primary);">Training Project</span>
                 <h3 class="research-title">RT-PCR Testing For Covid-19 and Biosafety</h3>
                 <div class="research-meta">
@@ -1174,7 +1180,7 @@
     <section class="skills" id="skills">
         <div class="section-header">
             <span class="section-label">Expertise</span>
-            <h2 class="section-title">Skills & Competencies</h2>
+            <h2 class="section-title">Skills &amp; Competencies</h2>
             <p class="section-subtitle">Technical proficiency across multiple laboratory disciplines</p>
         </div>
         <div class="skills-grid">
@@ -1185,13 +1191,13 @@
                 <h3 class="skill-title">Laboratory Techniques</h3>
                 <ul class="skill-list">
                     <li>Covid-19 RT-PCR</li>
-                    <li>HBV-DNA & HCV-RNA Testing</li>
+                    <li>HBV-DNA &amp; HCV-RNA Testing</li>
                     <li>Cultural Sensitivity Test</li>
                     <li>Cell Culture</li>
-                    <li>Microscopy & Imaging</li>
+                    <li>Microscopy &amp; Imaging</li>
                     <li>Protein Expression</li>
-                    <li>ELISA & Spectroscopy</li>
-                    <li>Chromatography & MS</li>
+                    <li>ELISA &amp; Spectroscopy</li>
+                    <li>Chromatography &amp; MS</li>
                     <li>DNA/RNA Extraction</li>
                 </ul>
             </div>
@@ -1199,7 +1205,7 @@
                 <div class="skill-icon">
                     <i class="fas fa-laptop-code"></i>
                 </div>
-                <h3 class="skill-title">Tools & Software</h3>
+                <h3 class="skill-title">Tools &amp; Software</h3>
                 <ul class="skill-list">
                     <li>Microsoft Office Suite</li>
                     <li>Mendeley Reference Manager</li>
@@ -1226,7 +1232,7 @@
     <section class="certifications" id="certifications">
         <div class="section-header">
             <span class="section-label">Credentials</span>
-            <h2 class="section-title">Training & Certifications</h2>
+            <h2 class="section-title">Training &amp; Certifications</h2>
             <p class="section-subtitle">Continuous professional development and specialized training</p>
         </div>
         <div class="cert-grid">
@@ -1262,7 +1268,7 @@
                     <i class="fas fa-vial"></i>
                 </div>
                 <div class="cert-content">
-                    <h4>RT-PCR & Biosafety Training</h4>
+                    <h4>RT-PCR &amp; Biosafety Training</h4>
                     <p>ICDDR,B - Specialized Hospital Training Program</p>
                 </div>
             </div>
@@ -1294,16 +1300,16 @@
             </div>
         </div>
         <div class="social-links">
-            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
-            <a href="#" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-            <a href="mailto:jinnatparvin5545@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="#" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" title="ResearchGate" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+            <a href="#" title="Google Scholar" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+            <a href="mailto:jinnatparvin5545@gmail.com" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Most. Jinnat Parvin. All rights reserved. | Designed with passion for science</p>
+        <p>&copy; 2026 Most. Jinnat Parvin. All rights reserved. | Designed with passion for science</p>
     </footer>
 
     <script>
